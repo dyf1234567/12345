@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .img-width img {
+            width: 100%;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            color: white !important;
+        }
+
+        .footer-nav h4 {
+            font-size: 1.2em;
+            color: white !important;
+        }
+
+
+        .footer-nav ul a {
+            color: white !important;
+        }
+
+        .pagefooter {
+            background-color: #343a40;
+            margin: 20px 0;
+            padding: 30px 0;
+
+        }
+    </style>
+</head>
+
+<body style="padding-top: 56px;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">教程</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            视频
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">HTML5</a>
+                            <a class="dropdown-item" href="#">CSS3</a>
+                            <a class="dropdown-item" href="#">JavaScript</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">jquery</a>
+                            <a class="dropdown-item" href="#">bootstrap</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <form class="form-inline my-2 my-lg-0">
+
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-success" type="submit">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">登录</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">注册</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <div id="demo" class="carousel slide img-width" data-ride="carousel">
+
+        <!-- 指示符 -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- 轮播图片 -->
+        <div class="carousel-inner" id="top">
+            <div class="carousel-item active">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="images/play01.jpg">
+                    <source media="(min-width: 768px)" srcset="images/play01-sm.jpg">
+                    <img src="images/play01-xs.jpg" alt="">
+                </picture>
+                <div class="carousel-caption">
+                    <h3>第一张图片描述标题</h3>
+                    <p>描述文字!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="images/play02.jpg">
+                    <source media="(min-width: 768px)" srcset="images/play02-sm.jpg">
+                    <img src="images/play02-xs.jpg" alt="">
+                </picture>
+                <div class="carousel-caption">
+                    <h3>第一张图片描述标题</h3>
+                    <p>描述文字!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="images/play03.jpg">
+                    <source media="(min-width: 768px)" srcset="images/play03-sm.jpg">
+                    <img src="images/play03-xs.jpg" alt="">
+                </picture>
+                <div class="carousel-caption">
+                    <h3>第一张图片描述标题</h3>
+                    <p>描述文字!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 左右切换按钮 -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+
+    <div class="container" style="margin-top: 20px;">
+        <nav class="breadcrumb">
+            <a class="breadcrumb-item" href="#">首页</a>
+            <a class="breadcrumb-item" href="#">视频</a>
+            <span class="breadcrumb-item active">Bootstrap</span>
+        </nav>
+
+
+        <div>
+            <div class="row" id="courseBox">
+                <!-- <div class="col-sm-6 col-md-4 col-lg-3">
+                    <img decoding="async" src="images/Ajax.jpg" class="img-thumbnail" alt="Cinque Terre">
+                    <div class="caption">
+                        <h3>Ajax</h3>
+                        <p>报天不之使着给登出、皇韩且幕策就程，韩。</p>
+                        <p>
+                            <a href="#" class="btn btn-success" role="button">立即购买</a>
+                            <a href="#" class="btn btn-info" role="button">在线试看</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <img decoding="async" src="images/css.jpg" class="img-thumbnail" alt="Cinque Terre">
+                    <div class="caption">
+                        <h3>Css</h3>
+                        <p>读人宋妄小评会马份被珍将定磊不用秦死已。</p>
+                        <p>
+                            <a href="#" class="btn btn-success" role="button">立即购买</a>
+                            <a href="#" class="btn btn-info" role="button">在线试看</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <img decoding="async" src="images/BootStrap.jpg" class="img-thumbnail" alt="Cinque Terre">
+                    <div class="caption">
+                        <h3>Bootstrap</h3>
+                        <p>考洪冈介叩天外，亲者九入畴不不判苦，一。</p>
+                        <p>
+                            <a href="#" class="btn btn-success" role="button">立即购买</a>
+                            <a href="#" class="btn btn-info" role="button">在线试看</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <img decoding="async" src="images/Less.jpg" class="img-thumbnail" alt="Cinque Terre">
+                    <div class="caption">
+                        <h3>Less</h3>
+                        <p>报天不之使着给登出、皇韩且幕策就程，韩。</p>
+                        <p>
+                            <a href="#" class="btn btn-success" role="button">立即购买</a>
+                            <a href="#" class="btn btn-info" role="button">在线试看</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <img decoding="async" src="images/React.jpg" class="img-thumbnail" alt="Cinque Terre">
+                    <div class="caption">
+                        <h3>React</h3>
+                        <p>报天不之使着给登出、皇韩且幕策就程，韩。</p>
+                        <p>
+                            <a href="#" class="btn btn-success" role="button">立即购买</a>
+                            <a href="#" class="btn btn-info" role="button">在线试看</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <img decoding="async" src="images/html5.jpg" class="img-thumbnail" alt="Cinque Terre">
+                    <div class="caption">
+                        <h3>Html5</h3>
+                        <p>报天不之使着给登出、皇韩且幕策就程，韩。</p>
+                        <p>
+                            <a href="#" class="btn btn-success" role="button">立即购买</a>
+                            <a href="#" class="btn btn-info" role="button">在线试看</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <img decoding="async" src="images/jQuery.jpg" class="img-thumbnail" alt="Cinque Terre">
+                    <div class="caption">
+                        <h3>jQuery</h3>
+                        <p>报天不之使着给登出、皇韩且幕策就程，韩。</p>
+                        <p>
+                            <a href="#" class="btn btn-success" role="button">立即购买</a>
+                            <a href="#" class="btn btn-info" role="button">在线试看</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <img decoding="async" src="images/js.jpg" class="img-thumbnail" alt="Cinque Terre">
+                    <div class="caption">
+                        <h3>js</h3>
+                        <p>报天不之使着给登出、皇韩且幕策就程，韩。</p>
+                        <p>
+                            <a href="#" class="btn btn-success" role="button">立即购买</a>
+                            <a href="#" class="btn btn-info" role="button">在线试看</a>
+                        </p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <ul class="pagination" style="padding: 20px;" id="pageBox">
+            <!-- <li class="page-item"><a class="page-link" href="#"><</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">></a></li> -->
+        </ul>
+    </div>
+
+
+    <footer class="pagefooter">
+        <div class="container">
+            <div class="footer-nav">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <h4>用户</h4>
+                        <ul>
+                            <li><a href="#">账户中心资料</a></li>
+                            <li><a href="#">下载中心</a></li>
+                            <li><a href="#">订单跟踪</a></li>
+                            <li><a href="#">用户评价</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <h4>教育</h4>
+                        <ul>
+                            <li><a href="#">账户中心资料</a></li>
+                            <li><a href="#">下载中心</a></li>
+                            <li><a href="#">订单跟踪</a></li>
+                            <li><a href="#">用户评价</a></li>
+                            <li><a href="#">用户评价</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <h4>公司</h4>
+                        <ul>
+                            <li><a href="#">账户中心资料</a></li>
+                            <li><a href="#">下载中心</a></li>
+                            <li><a href="#">订单跟踪</a></li>
+                            <li><a href="#">用户评价</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <h4>开发人员</h4>
+                        <ul>
+                            <li><a href="#">账户中心资料</a></li>
+                            <li><a href="#">下载中心</a></li>
+                            <li><a href="#">订单跟踪</a></li>
+                            <li><a href="#top">用户评价</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12" style="color: white; text-align: center;">
+                    <h4>版权信息</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- 模态框 -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">登录</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- 模态框主体 -->
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="email">账号:</label>
+                            <input type="text" class="form-control" placeholder="请输入用户名" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">密码:</label>
+                            <input type="password" class="form-control" placeholder="请输入密码" id="pwd">
+                        </div>
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox">记住密码
+                            </label>
+                        </div>
+
+                    </form>
+                </div>
+
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">登录</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script>
+       
+       (function () {
+            // 调用函数 获取第一页的数据
+            getCourse();
+
+            // 给页码按钮监听单击事件
+            $('#pageBox').on('click', 'a', function(event) {
+                // 阻止浏览器默认行为
+                event.preventDefault();
+                // 获取课程列表数据，指定页码
+                getCourse(this.dataset.page);
+            })
+
+            // 函数 获取课程信息 参数1指定第几页，默认值是1； 参数2指定每页多少条数据，默认值是8
+            function getCourse(no=1, size=8) {
+                // 使用 axios 向后端发送请求，获取课程列表信息
+                axios.get('https://api.fuming.site/course', {
+                    params: {
+                        pageNo: no,
+                        pageSize: size
+                    }
+                }).then(function (res) {
+                    console.log(res.data);
+
+                    // 渲染课程列表信息 -----------------------
+                    let htmlData = '';
+                    res.data.data.forEach(function (item) {
+                        htmlData += ` <div class="col-sm-6 col-md-4 col-lg-3">
+                    <img decoding="async" src="${item.img}" class="img-thumbnail" alt="Cinque Terre">
+                    <div class="caption">
+                        <h3>${item.title}</h3>
+                       
+                        <p>
+                            <a href="#" class="btn btn-success" role="button">立即购买</a>
+                            <a href="${item.href}" class="btn btn-info" role="button">在线试看</a>
+                        </p>
+                    </div>
+                </div>
+                    `
+                    });
+                    $('#courseBox').html(htmlData);
+
+                    // 渲染分页信息 ---------------------------------
+                    let pageData = `
+                    <li class="page-item"><a class="page-link" data-page="${res.data.pageNo-1}" href="#"><</a></li>`;
+                    for (let i = 1; i <= res.data.pageSum; i++) {
+                        pageData += `
+                        <li class="${res.data.pageNo === i ? 'active' : ''} 
+                        page-item"><a class="page-link" data-page="${i}" href="#">${i}</a></li>`;
+                    }
+                    pageData += `
+                    <li class="page-item"><a class="page-link" data-page="${res.data.pageNo+1}" href="#">></a></li>`;
+                    $('#pageBox').html(pageData);
+                })
+            }
+        })();
+    
+    </script>
+</body>
+
+</html>
